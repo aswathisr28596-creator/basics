@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <form action="first-task.html">
+
+<table>
+    <tr>
+      <td><label for="name">Name</label></td>
+      <td><input type="text" id="name" name="fname" required placeholder="Enter your Name"></td> 
+    </tr>
+
+    <tr>
+      <td><label for="gen">Gender</label></td>
+      <td><input type="radio" id="mid" name="mname" value="male"><label for="mid">male</label>
+      <input type="radio" id="fid" name="mname" value="female"><label for="fid">female</label> </td> 
+                                    <!-- give same name for getting one selection -->
+    </tr>
+   
+    <tr>
+      <td><label for="course">Course</label></td>
+      <td><input type="checkbox" name="a" id="a1" value=""><label for="a1">Python</label>
+      <input type="checkbox" name="b" id="b1" value=""><label for="a1">Java</label></td> 
+    </tr>
+
+    <tr>
+      <td><label for="country">Country</label></td>
+      <td><select name="" id="">
+        <option value="">Select</option>
+        <option value="">India</option>
+        <option value="">Saudi Arabia</option>
+      </select> </td>
+    </tr>
+
+    <tr>
+      <td><label for="address">Address</label></td>
+      <td><textarea name="" id="" required placeholder="Enter the Address"></textarea></td>
+    </tr>
+
+    <tr>
+    <td><label for="email">Email</label></td>
+    <td><input type="email" id="email" name="email" required placeholder="Enter yuor Email"></td>
+    </tr>
+
+    <tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" id="password" name="password" required placeholder="Enter the Password"></td>
+    </tr>
+
+    <tr>
+        <td><label for="age">age</label></td>
+        <td><input type="number" id="number" name="number" required placeholder="Enter your Age" min="18" max="40" step="2"></td>
+                                                                                                                     <!-- scroll by 2 -->
+    </tr>
+
+    <tr>
+        <td><label for="profilepic">Profile picture</label></td>
+        <td><input type="file" id="profilepic" name="profilepic"  multiple></td>
+    </tr>
+
+    <tr>
+        <td><label for="aboutme">About Me</label></td>
+        <td><textarea name="aboutme" id="aboutme" placeholder="Wrte a short bio about yourself"></textarea></td>
+    </tr>
+
+    <tr>
+    <td><input type="submit" value="submit"></td>
+    </tr>
+
+    <tr>
+        <td><label for="audio">Audio File</label></td>
+        <td><audio controls loop autoplay muted>
+            <source src="https://www.computerhope.com/jargon/m/example.mp3">
+        </audio></td>
+    </tr>
+
+    <tr>
+        <td><label for="video">Video File</label></td>
+        <td><video controls loop autoplay muted width="400" height="200">
+            <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4">
+            </video></td>
+    </tr>
+
+</table> 
+</form>
+
+
+ <div>
+       <div><iframe src="https://www.youtube.com/embed/HGTJBPNC-Gw" frameborder="0"></iframe></div>
+       
+       <div><iframe width="400" height="300" src="first-task.html"></iframe></div>
+        
+       <div><marquee behavior="" direction="right" style="width: 300px;">Video File</marquee> </div>
+ </div>
+  
+    
+</body>
+</html>

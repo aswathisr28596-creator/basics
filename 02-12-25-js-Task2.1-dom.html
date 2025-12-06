@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Task2-Change Price</title>
+</head>
+<body>
+    <p id="price">1000</p>
+    <button onclick="changePrice()">Change Price</button>
+
+    <script>
+        function changePrice() {
+            // Select the element and change its content
+            document.getElementById("price").innerHTML = 500;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Task2-changeprice</title>
+</head>
+<body>
+
+    <p id="price">300</p>
+     <button onclick="changePrice()">Change Price</button>
+
+    <script>
+        function changePrice(){
+            let priceElement=document.getElementById("price");
+            let currentPrice=parseInt(priceElement.innerHTML);
+
+            for(let i=0;i<1;i++){
+                 if(currentPrice<500){
+                    priceElement.innerHTML=500;
+                 }
+            }
+        }
+       
+    </script>
+    
+</body>
+</html>

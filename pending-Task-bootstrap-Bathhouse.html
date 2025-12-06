@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+  
+
+    <style>
+        body{
+            margin: 30px;
+        }
+
+        .full{
+            padding-right: 70px;
+            padding-left: 70px;
+            background-color: black;
+            color: white;
+        }
+
+
+        .navbar{
+            height: 130px;  
+        }
+        .nav-apps{
+            color: white; 
+            padding-left: 35px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav-logo{
+          height: 80px;
+          width: 350px;
+          padding-left: 85px;
+         
+          background-color: black;
+         
+        }
+          .button {
+            background-color: rgb(166, 163, 163);
+            gap: 30px;
+          }
+        .button:hover{
+            background-color: rgb(68, 66, 66);
+        }
+
+
+        .notif-left{
+          position: fixed;
+          top: 50%;
+          left: 0;
+          width: 200px;
+          height: 10vh;
+          transform: rotate(-90deg);
+          color: white; 
+           
+        }
+        .notif-right{
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 60px;
+          height: 100vh;
+          background-color:black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+        }
+
+
+        .img-fluid{
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 30px;
+          }
+
+          .hedd-h2{
+            text-align: center;
+            word-spacing: 12px;
+          }
+          .button-booknow{
+            margin-left: 550px;
+            color: white;
+            background-color: black;
+            width: 150px;
+            height: 70px;
+          }
+          .button-booknow:hover{
+            background-color: white;
+            color: black;
+          }
+
+
+
+          .button-browsprice{
+            margin-left: 550px;
+            color: white;
+            background-color: black;
+            width: 200px;
+            height: 70px;
+            margin-bottom: 180px;
+          }
+          .button-browsprice:hover{
+            background-color: white;
+            color: black;
+          }
+
+
+          .card{
+            background-color: black;
+            color: white;
+          }
+
+
+          .amenities{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            
+          }
+
+
+          /* .btn{
+            background-color: black;
+            color: white;
+
+          }
+          .btn:hover{
+            background-color: white;
+            color: black;
+          } */
+
+
+          .thin-line{
+            border: none;
+            border-top: 1px solid white ;
+            margin: 20px auto;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
+
+
+          .mail{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            margin-left: 400px;
+            width: 300px;
+            height: 50px;
+            padding-left: 20px;
+          }
+          .mail:hover{
+            border: none;
+          }
+
+          .button-signup{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100px;
+            margin: 20px;
+          }
+
+
+          .foot-apps{
+            color: white; 
+            padding-left: 500px;
+            padding-top: 100px ;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+.demo{
+    background-color:black;
+    color: white;
+}
+
+        
+        
+        
+       
+    </style>
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  
+  
+  <body>
+
+
+<div class="full"> 
+
+    <nav class="navbar navbar-dark bg-black fixed-top">
+  <div class="container-fluid">
+
+
+<div >
+    <i class="fa-brands fa-facebook nav-apps"></i>
+    <i class="fa-brands fa-instagram nav-apps"></i>
+    <i class="fa-brands fa-tiktok nav-apps"></i>
+    <i class="fa-brands fa-linkedin-in nav-apps"></i>
+</div>
+
+
+<a class="navbar-brand fs-1 " href="#"><img src="image/bathhouse-logo.png" class="nav-logo" alt=""></a>
+
+ <button type="button" class="btn btn-outline-dark demo">AI SEARCH</button> 
+  <!-- <i class="bi bi-search"></i> AI SEARCH -->
+<!-- </button> -->
+
+
+
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="notif-left">
+    <button><b>GET 20% OFF <span style="padding-left: 20px;"> <span class="btn-close"></span></b></button>
+</div>
+<div class="notif-right">
+     <button>Hi. Need any help?</button>
+</div>
+
+
+
+
+
+
+<img src="image/bathhouse-1pic.jpeg" class="img-fluid" alt="...">
+<!-- <button type="button" class="btn-close" aria-label="Close">jhbjhbjjhmnnnjnjkjkhk</button> -->
+<!-- <button type="button" class="btn-close" disabled aria-label="Close"></button> -->
+
+
+
+
+
+<div class="container mt-4" style="background-color: rgb(23, 22, 22); padding: 50px;">
+
+      <!-- Heading -->
+  <h2 class="text-center mb-4 hedd-h2" >BATHHOUSE FLATIRON</h2>
+
+      <!-- Two columns -->
+  <div class="row">
+    
+      <!-- Left Side Sentences -->
+    <div class="col-md-6" style="padding-left: 360px; padding-top: 50PX; ">
+      <p><a href="" style="color: white; font-family: 'Courier New', Courier, monospace;">14 West 22 street</a></p>
+      
+      <p><a href="" style="color: white; font-family: 'Courier New', Courier, monospace;">Newyork , NY 10010</a></p>
+    </div>
+
+    <!-- Right Side Sentences -->
+    <div class="col-md-6" style="padding-left: 150PX; padding-top: 50PX;">
+      <p><a href="" style="color: white; font-family: 'Courier New', Courier, monospace;">(646) 891 - 1315 </a></p>
+      <p>FLATORION@BATHHOUSE.COM</p>
+    </div>
+
+  </div>
+  <button class="button-booknow" >BOOK NOW</button>
+
+</div>
+
+
+
+<h4 style="text-align: center; padding-top: 60px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">DAY PASS,  STARTS AT $39</h4>
+
+
+<img src="image/bathhouse-2.jpeg" style="width: 100%; padding-top:30px; padding-bottom:30px ;" alt="">
+
+
+
+<p style="text-align: center; padding-bottom: 30px; font-family: 'Courier New', Courier, monospace;"><b>Price vary based on the day and time you choose.</b></p>
+
+<button class="button-browsprice">BROWSE PRICES</button>
+
+
+
+<h2 class="hedd-h2">FLATIRON AMENITIES</h2>
+
+
+<div class="container">
+
+<div class="row m-5 gap-5 justyfy-content-center">
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">6 THERMAL POOLS</h5>
+    <p class="card-text amenities">Bathhouse Flatiron features six thermal pools: two hot pools (104 <sup>0</sup> F), two cold pools (45 <sup>0</sup> F) 
+            and (50 <sup>0</sup> F), neutral pool (98 <sup>o</sup>F) and salt pool(98 <sup>0</sup>F).</p>
+    
+  </div>
+</div>
+
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card2.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">BANYA</h5>
+    <p class="card-text amenities"> Powered by a gas furnace, the banya runs between 185 <sup>0</sup> F and 195 <sup>0</sup> F.</p>
+    
+  </div>
+</div>
+</div>
+
+<div class="row m-5 gap-5 justyfy-content-center">
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card3.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">DRY SAUNA</h5>
+    <p class="card-text amenities">Sauna Masters perform Aufguss <a href="" style="color: white;">(Guided sauna sessions) 
+                                      </a> in temperaturs up to 85 <sup>0</sup> F.</p>
+   
+  </div>
+</div>
+
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card6.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">SALT POOL</h5>
+    <p class="card-text amenities">Salt pool is loaded in the quiet area. It runs at 98 <sup>0.</sup>F</p>
+    
+  </div>
+</div>
+</div>
+
+<div class="row m-5 gap-5 justyfy-content-center">
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card5.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">STEAM POOL</h5>
+    <p class="card-text amenities">The steam room runs at115 <sup>0</sup> F.</p>
+   
+  </div>
+</div>
+
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card4.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">INFRARED SAUNA</h5>
+    <p class="card-text amenities">Infrared sauna radiates up to 135 <sup>0</sup> F.</p>
+    
+</div>
+</div>
+</div>
+
+<button class="button-browsprice">BOOK DAY PASS</button>
+
+
+<a href=""><h2 class="hedd-h2" style="color: white; ">TREATMENTS</h2></a>
+
+
+
+
+<div class="container">
+
+<div class="row m-5 gap-5 justyfy-content-center ">
+<div class="card" style="width: 35rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card7.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">MASSAGE</h5>
+    <div class="amenities">
+    <p class="card-text">From $195.</p>
+    <p>Full body massage for individuals and couples. <br>
+       Includes amenity access (Thermal pools, saunas, steem room).</p>
+    <ul>
+        <li>Full-Body Massage, 50 min</li>
+        <li>Pro Massage, 80 min</li>
+        <li>Prenatal Massage, 50 min</li>
+        <li>Couple Massage, 50 min / 80 min</li>
+    </ul>
+    </div>
+    <!-- <button class="button-browsprice">BOOK DAY PASS</button> -->
+    <a href="#" class="btn btn-primary " style="background-color: black; color: white;">READ MORE</a>
+  </div>
+</div>
+
+<div class="card" style="width: 34rem; background-color: rgb(24, 23, 23); color: white;">
+  <img src="image/bathhouse-card8.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="padding: 20px;">SCRUB</h5>
+    <div class="amenities">
+    <p class="card-text">From $130.</p>
+    <p>Hammam body scrubs for individuals & couples. <br>
+    Includes amenity access (thermal pool, saunas, steem room).</p>
+    <ul>
+        <li>Hammam Scrub, 30min</li>
+        <li>Pro Hammam Scrub, 50 min</li>
+        <li>Prenatal Hammam Scrub, 30 min / 80 min</li>
+        <li>Couple Hammam Scrubs, 30 min / 50 min</li>
+    </ul>
+    </div>
+    <a href="#" class="btn btn-primary" style="background-color: black; color: white;">READ MORE</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<h2 class="hedd-h2" style="padding: 50px;">BATHHOUSE FLATIRON REVIEWS</h2>
+
+
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+       <div style="display: flex; gap: 200px; text-align: center;">
+             <div>
+               <h4>"A COMPLEATE OASIS <br>TUCKED RIGHT IN THE <br>MIDDLE OF MANHATTAN!"</h4>
+               <p>Amanda R</p>
+             </div>
+             <Div>
+               <h4>"A MUST FOR THE BUSY <br>AND STRESSED NEW <br> YORKER. BATHHOUSE IS <br> BEAUTIFUL, FROM THE <br>
+               LIGHTING TO THE MUSIC <br> TO THE CROWED"</h4>
+               <P>Rachel H.</P>
+            </Div>
+            <Div>
+               <h4>"A MUST FOR THE BUSY <br>AND STRESSED NEW <br> YORKER. BATHHOUSE IS <br> BEAUTIFUL, FROM THE <br>
+               LIGHTING TO THE MUSIC <br> TO THE CROWED"</h4>
+               <P>Rachel H.</P>
+            </Div>
+            
+       </div>
+    </div>
+    <div class="carousel-item">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+    <div style="display: flex; gap: 200px; text-align: center;">
+      <div>
+        <h4>"A COMPLEATE OASIS <br>TUCKED RIGHT IN THE <br>MIDDLE OF MANHATTAN!"</h4>
+        <p>Amanda R</p>
+      </div>
+      <div>
+        <h4>"A MUST FOR THE BUSY <br>AND STRESSED NEW <br> YORKER. BATHHOUSE IS <br> BEAUTIFUL, FROM THE <br>
+        LIGHTING TO THE MUSIC <br> TO THE CROWED"</h4>
+        <P>Rachel H.</P>
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+       <div style="display: flex; gap: 200px; text-align: center;">
+      <div>
+        <h4>"A COMPLEATE OASIS <br>TUCKED RIGHT IN THE <br>MIDDLE OF MANHATTAN!"</h4>
+        <p>Amanda R</p>
+      </div>
+      <div>
+        <h4>"A MUST FOR THE BUSY <br>AND STRESSED NEW <br> YORKER. BATHHOUSE IS <br> BEAUTIFUL, FROM THE <br>
+        LIGHTING TO THE MUSIC <br> TO THE CROWED"</h4>
+        <P>Rachel H.</P>
+        </div>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<hr class="thin-line">
+
+
+
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <p style="letter-spacing: 6px;">LOCATIONS AND HOURS</p>
+    
+     <P style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white;">Flatiron</a> <br > 14 West 22ND Street <br> New York, NY 10010</P>
+     <p style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white; ">Williamsburg</a> <br>103 North 10th Street <br> Brooklyn, NY 11249</p>
+     <P style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white; font-family: 'Courier New', Courier, monospace;">Hours</a> <br>Monday to Thursday: 7am - 11pm <br> Friday: 7am -12pm <br>
+                      Saturday: 9am - 12am <br> Sunday: 9am - 11pm</P>
+
+    </div>
+    <div class="col">
+      <p style="letter-spacing: 6px;">READ MORE</p>
+      <p style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white;">FAQ - Health and Safty <p style="font-family: 'Courier New', Courier, monospace;">Know Before You Go </p>
+        <p style="font-family: 'Courier New', Courier, monospace;">Code Of Conduct </p><p style="font-family: 'Courier New', Courier, monospace;">Bathhouse Rewards </p> 
+        <p style="font-family: 'Courier New', Courier, monospace;"> Restaurant </p> <p style="font-family: 'Courier New', Courier, monospace;">Privacy Policy</p> <p style="font-family: 'Courier New', Courier, monospace;">Terms Of Service</a></p>
+    </div>
+    <div class="col">
+     <p style="letter-spacing: 6px;">CONTACT US </p>
+     <p style="font-family: 'Courier New', Courier, monospace;">Flatiron: (646) 891 - 1315 <br> Williamsburg: <a href="" style="color: black;">(929) 489 - 2284</a></p>
+     <p style="font-family: 'Courier New', Courier, monospace;">hello@bathhouse.com</p>
+     <p style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white;">Careers</a></p>
+     <p style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white;">Creators</a></p>
+    <p style="font-family: 'Courier New', Courier, monospace;"><a href="" style="color: white;">Contact</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<h4 class="hedd-h2" style="padding-top: 100px;">SUBSCRIBE</h4>
+<p style="text-align: center; font-family: 'Courier New', Courier, monospace;">Stay in the loop</p>
+<input type="email" id="" name="" class="mail" style="font-family: 'Courier New', Courier, monospace;" required placeholder="E-mail">
+<button class="button-signup" style="font-family: 'Courier New', Courier, monospace;">SIGN UP</button>
+
+
+
+
+<div class="foot-apps">
+    <i class="fa-brands fa-facebook nav-apps"></i>
+    <i class="fa-brands fa-instagram nav-apps"></i>
+    <i class="fa-brands fa-tiktok nav-apps"></i>
+    <i class="fa-brands fa-linkedin-in nav-apps"></i>
+</div>
+
+
+
+<hr class="thin-line">
+
+
+
+<img src="image/bathhouse-B.png" style="padding-left: 550px; padding-bottom: 50px; height: 150px;" alt="">
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+</div>
+</body>
+</html>

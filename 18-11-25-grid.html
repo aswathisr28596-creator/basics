@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: 
+                  "g g g"
+                  "m y y"
+                  "m r r";
+        }
+        .item{ 
+            border: 1px solid red; 
+        }
+        .item1{
+            background-color: green;
+            grid-area: g;
+        }
+        .item2{
+            background-color: rgb(127, 6, 140);
+            grid-area: m;
+        }.item3{
+            background-color: rgb(220, 217, 6);
+            grid-area: y;
+        }.item4{
+            background-color: rgb(70, 24, 195);
+            grid-area: p;
+        }.item5{
+            background-color: rgb(244, 33, 6);
+            grid-area: r;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" >
+        
+        <div class="item1 item">hhbfjdjjbfhjhjtjsjhrjhjkhrjtgjhkjhknbbhvfgvgvgfcxdxgfcgrf</div> 
+         <div class="item2 item">hhbfjdjjbfhjhjtjsjhrjhjkhrjtgjhkjhknbbhvfgvgvgfcxdxgfcgrf</div>
+         <div class="item3 item">hhbfjdjjbfhjhjtjsjhrjhjkhrjtgjhkjhknbbhvfgvgvgfcxdxgfcgrf</div>
+         <!-- <div class="item4 item">hhbfjdjjbfhjhjtjsjhrjhjkhrjtgjhkjhknbbhvfgvgvgfcxdxgfcgrf</div> -->
+         <div class="item5 item">hhbfjdjjbfhjhjtjsjhrjhjkhrjtgjhkjhknbbhvfgvgvgfcxdxgfcgrf</div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+            position: relative;
+
+            animation-name: move;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+               
+            /* animation: move 4s; */
+        }
+        @keyframes move{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 400px;
+                top: 0px;
+                border-radius: 150px;
+            }
+            50%{
+                left: 400px;
+                top: 400px;
+                border-radius: 150px;
+            }
+            75%{
+                left: 0px;
+                top: 400px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>

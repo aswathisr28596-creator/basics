@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Task2.2-persentage</title>
+</head>
+<body>
+    <p id="price">500</p>
+    <button onclick="change()">Change price</button>
+
+    <script>
+        function change(){
+            
+            let oldprice=document.getElementById("price");
+            let currentprice=parseInt(oldprice.innerHTML);
+
+            for(let i=0;i<1;i++){
+                if(currentprice>1000){
+                   let discount=(currentprice*10)/100;
+                   let newprice=currentprice-discount;
+                   oldprice.innerHTML=newprice;
+                }
+                
+                else{
+                    
+                    let discount=(currentprice*5)/100;
+                   let newprice=currentprice-discount;
+                   oldprice.innerHTML=newprice;
+                }
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+

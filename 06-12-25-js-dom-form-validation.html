@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function validateform(){
+    let name=document.getElementById("name").value;
+    let password=document.getElementById("pass").value;
+
+    if(name==null || name==""){
+        document.getElementById("namespan").innerHTML="Plese enter values."
+        return false;
+    }
+    else if(password.length<6){
+        document.getElementById("passspan").innerHTML="Password must be atleast 6 charactors long."
+        return false;
+    
+    }
+}
+
+function clearmsg(abc){
+    document.getElementById(sp).innerHTML="";
+}
+
+</script>
+
+
+    <form action="12-11-25-form-demo.html" onsubmit="return validateform()">
+       <label>UserName :</label>
+       <input type="text" id="name" onkeyup="clearmsg('namespan')">
+       <br>
+
+       <span id="namespan" style="color: red;"></span>
+       <br>
+
+       <label>Password :</label>
+       <input type="password" id="pass" onkeyup="clearmsg('passspan')">
+       <br>
+
+       <span id="passspan" style="color: red;"></span>
+       <br>
+
+       <input type="submit" value="submit" >
+
+    </form>
+    
+</body>
+</html>

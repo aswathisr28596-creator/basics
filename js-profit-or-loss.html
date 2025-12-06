@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Document</title>
+
+</head>
+<body>
+
+    <script>
+        let markedprice=2000,costprice=1400;
+        let discount,sellingprice,profit,profitpersentage;
+
+        discount=(markedprice*20)/100;
+        sellingprice=markedprice-discount;
+        profit=sellingprice-costprice;
+        profitpersentage=(profit/costprice)*100
+
+        console.log("discount =" +discount);
+        console.log("selling price ="+sellingprice);
+        console.log("profit ="+profit);
+        console.log("prifit persentage =" +profitpersentage);
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let noofchocolates=10,buyingcost=15;sellingcost=20;
+        let totalBC,totalSC,totalprofit,totalprofitprsntg;
+
+        totalBC=noofchocolates*buyingcost;
+        totalSC=noofchocolates*sellingcost;
+        totalprofit=totalSC-totalBC;
+        totalprofitprsntg=(totalprofit/totalBC)*100;
+
+        console.log("total buying cost ="+ totalBC);
+        console.log("total selling cost ="+ totalSC);
+        console.log("profit ="+ totalprofit);
+        console.log("profit persentage ="+ totalprofitprsntg);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <p id="numbers"></p>
+    <p id="evenCount"></p>
+    <p id="totalCount"></p>
+
+    <script>
+        let num=[10,15,25,30,40];
+        let numbers=document.getElementById("numbers");
+        
+       
+        let evenCount=0;
+        let totalCount=0;
+
+        for(let i=0;i<num.length;i++){
+            if(num[i]%2==0){
+             evenCount++;
+        }
+    }
+    for(let i=0;i<num.length;i++){
+        totalCount=totalCount+num[i];
+
+    }
+        numbers.innerHTML= num.join(", ");
+        document.getElementById("evenCount").innerHTML=evenCount;
+        document.getElementById("totalCount").innerHTML=totalCount;
+        
+
+
+
+    </script>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <p id="numbers"></p>
+    <p id="evenCount"></p>
+    <p id="totalCount"></p>
+
+    <script>
+        let num=[10,15,25,30,40];
+        let numbers=document.getElementById("numbers");
+        let even=document.getElementById("evenCount");
+        let total=document.getElementById("totalCount");
+        
+        
+       
+        let evenCount=0;
+        let totalCount=0;
+
+        for(let i=0;i<num.length;i++){
+            if(num[i]%2==0){
+             evenCount++;
+        }
+    }
+    for(let i=0;i<num.length;i++){
+        totalCount=totalCount+num[i];
+
+    }
+        numbers.innerHTML= num.join(", ");
+        even.innerHTML=evenCount;
+        total.innerHTML=totalCount;
+        
+
+
+
+    </script>
+    
+</body>
+</html>

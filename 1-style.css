@@ -1,0 +1,18 @@
+h3{
+    color:red
+   } 
+   p,h4{
+    color: blue;
+   }
+
+   #xyz{
+    color: yellow;
+   }
+
+   .stu{
+    color: orange;
+   }
+
+   *{
+    font-size: 30px;
+   }

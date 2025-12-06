@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p class="days">SUNDAY</p>
+    <p class="days">MONDAY</p>
+    <P class="days">TUESDAY</P>
+    <P class="days">WEDNESDAY</P>
+    <P class="days">THIRSDAY</P>
+
+    <script>
+        let days=document.getElementsByClassName("days");
+        for(let i=0;i<days.length;i++){
+            days[i].innerHTML=days[i].innerHTML +"- Active";
+        }
+
+    </script>
+    
+</body>
+</html>

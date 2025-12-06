@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>doc</title>
+        <style>
+
+        body{
+            margin: 0px;
+           
+           }
+       
+
+         #backg{
+            height: 100vh;
+            background-image: url(image/bilvolvophoto1_as-approved_-winters_amazon_volvo_adam_scott_099_buildout_251005-982055.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            background-attachment: scroll;
+            padding-top: 60px;
+        }
+         
+        
+        
+        .nav{ 
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 35px;
+            top: 0;
+            position:fixed;
+            padding-left: 20px; 
+            padding-top: 25px;
+         }
+         .nav-menu{
+            width: 20px;
+            height: 20px;
+         }
+         .nav-menu:hover{
+            background-color: rgb(234, 231, 231);
+            /* border-radius: 100%; */
+         }
+        .nav-volvo{
+            letter-spacing: 6px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 20px;
+        }
+        .nav a{
+            color: black;
+            text-decoration: none;
+        }
+        .navleft{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            gap: 20px;
+            letter-spacing: 2px;
+        } 
+        /* .navleft:hover{
+            background color: rgb(197, 194, 194);
+        } */
+         
+         .search{
+            width: 20px;
+            height: 20px;
+            gap: 35px;
+            cursor: pointer;
+            padding-left: 600px;
+         }
+         /* .search:hover{
+            background-color: rgb(222, 217, 217);
+         } */
+         .signin{
+            width: 20px;
+            height: 20px;
+            gap: 35px;
+            cursor: pointer;
+            padding-left: 50px;
+        }
+         
+        
+        
+        .notification-bar{
+            background-color: black;
+            position: sticky;
+            width: 100%;
+            color: white;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-family: Verdana, Tahoma, sans-serif;
+            display: flex;
+           }
+           .notification-bar a{
+            color: white;
+            text-decoration-thickness: 1px;
+        }
+        .notification-bar a:hover{
+            text-decoration-thickness: 3px;
+        }
+        #notifyBar{
+            text-align: center;
+            gap: 50px;
+            padding-left: 400px;
+        }
+        .close-btn{
+            font-size: 20px;
+            cursor: pointer;
+            padding-left: 450px;
+        }
+        
+         
+
+        
+        .text{
+            color: white;
+            text-align: right;
+            padding-top: 100px;
+            padding-right: 30px;
+            font-size: larger;
+        }
+        button{
+            padding: 12px 24px;
+           font-size: large;
+           /* border-radius: 1px; */
+        } 
+        button a{
+            color: black;
+            text-decoration: none;
+
+        }
+        
+        
+        
+        .content-below{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 18vh;
+            padding-left: 30px;
+            gap: 10px;
+        }
+        .item{
+            background-color: rgb(243, 243, 241);
+            width: 320px;
+           cursor: pointer;
+           text-align: center;
+        }
+        .item:hover{
+            background-color: rgb(227, 224, 224);
+        }
+        .item a{
+            color: rgb(6, 6, 6);
+            text-decoration: none ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         @media (max-width:1000px){
+            .content-below{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+         @media (max-width:800px){
+            .content-below{
+                grid-template-columns: 1fr ;
+            }
+        }
+
+
+        .image0{
+            display: flex;
+        }
+        .image{
+            width: 660px;
+            height: 370px;
+            padding-top: 140px;
+            padding-left: 25px;
+            padding-right: 30px;
+        }
+        .para{
+            color: rgb(7, 7, 7);
+            width: 660PX;
+            padding: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .para1{
+            color: rgb(96, 91, 91);
+        }
+        .explore a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .models{
+            padding: 30px;
+            padding-top: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+         .scroll{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            
+        }
+        .scroll img{
+            width: 1200px;
+            height: 600px;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+        .scroll img:hover{
+            transition: transform 2s;
+            transform: scale(.5);
+        }
+        .scroll-text-h1{
+            padding-left: 50px;
+        }
+        .scroll-text-p{
+            padding: 50px;
+            color: rgb(124, 86, 86);
+        }
+        .scroll-button{
+            margin-left: 50px;
+            padding-left: 10px;
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 10%;
+
+        }
+
+
+
+
+
+        .line{
+            text-align: center;
+           
+            padding-top: 80px; 
+        }
+
+
+        .features{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            height: 30h;
+            padding: 30px;
+            gap: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .features a{
+            text-decoration: none;
+            color: black;
+        }
+        .feature-card{
+            overflow: hidden;
+            box-shadow: opx 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: rgb(250, 250, 248);
+        }
+        .feature-card:hover{
+            background-color: rgb(240, 237, 237);
+        }
+        .feature-card img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .feature-card h3{
+            word-spacing: 270px;
+            margin: 10px;
+            font-size: 22px;
+            padding: 20px;
+        }
+        .feature-card p {
+            margin: 10px;
+            color: #555;
+        }
+
+
+        .compare{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* align-items: center; */
+            /* height: 40px; */
+            gap: 25px;
+            padding: 50px;
+            text-align: center;
+        }
+        .compare-image img{
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+        .compare-text{
+            background-color: rgb(252, 251, 252);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .compare-text h3{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .compare-text P{
+            margin-bottom: 20PX;
+            color: #555;
+        }
+        .compare-btn{
+            border: 2px solid black;
+            border-radius: 4%;
+            background: transparent;
+            padding: 10px 25px;
+        }
+        .compare-btn:hover{
+            background-color: rgb(241, 235, 235);
+        }
+
+
+        footer{
+           height: 500px;
+           background: #fcfbfb;
+           text-align: center;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        footer a{
+            text-decoration: none;
+            color: black;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+        .footer-col{
+             display: flex;
+             padding-left: 450px;
+
+        }
+        .footer-col h5{
+            font-weight: bold;
+            color: rgb(132, 128, 128);
+            margin-right: 40px;
+        }
+        .footer-col ul{
+            list-style: none;
+             padding: 0; 
+        }
+        .footer-col ul li{
+            margin-bottom: 17px;
+            margin-right: 40px ;
+        }
+        .footer-location{
+            width: 20px;
+            height: 20px;
+            padding-top: 20px;
+        }
+        .footer-apps{
+             display: flex;
+             padding-left: 600px;
+             padding-top: 20px;
+        }
+        .footer-appsize{
+            width: 25px;
+            height: 25px;
+            padding: 20px;
+            /* transition: 0.3s; */
+        }
+        .footer-appsize:hover{
+            background-color: rgb(228, 227, 227);
+            border-radius: 50%;
+        }
+
+        .footer-last{
+            color:rgb(129, 126, 126);
+            padding: 20px;
+            font-size: 12px;
+            
+        }
+
+
+ </style>
+</head>
+<body>
+
+     <div id="backg">
+        
+        <div class="nav"><div class="nav-volvo nav" >
+            <a href=""><img src="image/menuuuu.png" class="nav-menu" alt=""></a>
+            <a href="Task-Volvo.html" class="nav-volvo"><b>VOLVO </b></a>
+            <ul class="navleft " >
+                <li><a href="">Our cars</a></li>
+                <li><a href="">Shope</a></li>
+                <li><a href="">Owners</a></li>
+                <li><a href="">Electrification</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <div ><img src="image/searchhhhh.png" alt="" class="search"></div>
+            <div ><img src="image/signin.png" alt="signin" class="signin">      </div>
+            </div>
+        </div>
+
+
+
+       <div class="notification-bar" id="notifyBar">Experience Luxuary in a Volvo car <a href="4-11-25-demo.html" > <b>Book a Test Drive</b> </a>
+            <div><span class="close-btn" onclick="closebar()">x</span></div>
+        </div>
+        
+        
+        
+        <div class="text">
+               <p>Meet the New XC90</p>
+               <H1>Our iconic large SUV, made <br> even better</H1>
+               <button><a href="4-11-25-demo.html">Explore</a></button>
+        </div>
+
+    </div>  
+        
+
+    
+    
+    <div class="content-below">
+           <div class="item"><a href="4-11-25-demo.html"><h3>Book a test drive  ></h3>
+                             <p style="color: rgb(80, 78, 78);">Find out what it would be like to drive a Volvo every day</p></a>
+           </div>
+         <div class="item"><a href="4-11-25-demo.html"><h3>Accessories and Service  ></h3>
+                             <p style="color: rgb(80, 78, 78);">Personalise your drive by adding equipment and more</p></a></div>
+         <div class="item"><a href="4-11-25-demo.html"><h3>Approved used cars  ></h3>
+                            <p style="color: rgb(80, 78, 78);">Find an approved used car at the right price  </p></a></div>
+         <div class="item"><a href=""><h3>Find a retailer  ></h3>
+                            <p style="color: rgb(80, 78, 78);">Contact us or visit us in person</p></a></div>
+    </div> 
+     
+
+    
+    <div class="image0">
+    <div ><img src="image/1...XC60_Images_2560x1440-09.avif" alt="" class="image"></div>
+    <div><img src="image/2...EC40_Web_Banner.avif" alt="" class="image"></div>
+    </div>
+       
+
+    <div class="image0" >
+        <div class="para"><h2 >Meet the Volvo XC60</h2>
+          <p class="para1">Performance where it matters the most.With google build in, intelligent safty <br>assistance and all the space you need. </p>
+          <h4 class="explore"><a href="">Explore ></a></h4>
+        </div>
+        <div class="para"><h2>Discover the EC40</h2>
+          <P class="para1">The shape of things to come. Discover our pure electric crossover with leather-free <br> interior and Google built-in</P>
+          <h4 class="explore"><a href="4-11-25-demo.html">Explore ></a></h4>
+        </div>
+   </div>
+
+
+   
+   <div><h1 class="models">Featured models</h1></div>
+  
+
+   <div >
+        <div>
+        <h1 class="scroll-text-h1">EX30</h1>
+        <p class="scroll-text-p">Purchase from Rs 41,00,000/-</p>
+        <button class="scroll-button">Explore</button>
+        </div>
+        <div class="scroll">
+        <img src="image/car3.jpeg" alt="">
+        <img src="image/car5.jpeg" alt="">
+        <img src="image/car3.jpeg" alt="">
+        <img src="image/car5.jpeg" alt="">
+        </div>
+    </div>
+  
+       
+  
+  
+    <div>
+    <h1 class="line">We're dedicated to giving you <span style="color: rgb(91, 89, 89);">the freedom to move in a <br>personal, sustainable and safe way.</span></h1>
+   </div>
+
+  
+  
+  
+  <div class="features"><a href="">
+    <div class="feature-card">
+        <img src="image/photos1.avif" alt="">
+        <h3>Electric  ></h3>
+        <p>Confidently go electric by learning about charging, range and the cost of electric driving.</p>
+   </div>
+   <div class="feature-card"><a href="">
+       <img src="image/photos2.avif" alt="">
+       <h3>Safty    ></h3>
+       <p>Discover innovative technologies that keep Volvo Cars at the forfront of automotive safty.</p>
+   </div>
+   <div class="feature-card">
+      <img src="image/photos3.avif" alt="">
+      <h3 style="word-spacing: 200px;">Sustainability   ></h3>
+      <p>Learn how we're reducing emissions, embracing circularity and much more to poineer new ways to protect the planet.</p>
+  </div></a>
+  </div>
+
+
+  
+  
+  <div class="compare">
+    <div class="compare-image">
+        <img src="image/2_Car_Range_4x3_(3) last.avif" alt="">
+    </div>
+    <Div class="compare-text">
+        <h3>Compare Models</h3>
+        <p>Find the Volvo Car that suits your needs.</p>
+        <button class="compare-btn"> <a href="">Explore</a></button>
+    </Div>
+</div>
+
+
+
+
+<footer>
+    <h4><a href="Task-Volvo-pending.html">Back to top  ^</a></h4>
+    
+    <div class="footer-col">
+        <div>
+        <h5>HELP & SUPPORT</h5>
+    <ul>
+        <li><a href="">Book a service</a></li>
+        <li><a href="">Support & manuals</a></li>
+    </ul>
+    </div>
+    <Div>
+        <h5>CONTACT US</h5>
+    <ul>
+        <li><a href="">Contact Volvo</a></li>
+        <li><a href="">Find a dealer</a></li>
+        <li><a href="">Book a test drive</a></li>
+    </ul>
+    </Div>
+    <DIv>
+        <h5>VOLVO CARS APP</h5>
+    <ul>
+        <li><a href="">App store</a></li>
+        <li><a href="">Google play</a></li>
+    </ul>
+    </div>
+    </div>
+   <div> 
+       <a href=""><img src="image/location.png" class="footer-location" alt="">India</a>
+   </div>
+   <div class="footer-apps">
+     <a href=""><img src="image/facebook.png" class="footer-appsize" alt=""></a>
+     <a href=""><img src="image/youtube.png" class="footer-appsize" alt=""></a>
+     <a href=""><img src="image/instagram.png" class="footer-appsize" alt=""></a>
+     <a href=""><img src="image/threads.png" class="footer-appsize" alt=""></a>
+   </div>
+
+   <div class="footer-last">
+    <a href="" class="footer-last">Cookies</a>
+    <a href="" class="footer-last">Legal</a>
+    <a href="" class="footer-last"> Privacy</a>
+   </div>
+   <div class="footer-last">Copyright c 2025 Volvo Car Corporation (or its affiliates or licensors)</div>
+</footer>
+
+
+<!-- </div> -->
+
+
+</body>
+</html>
