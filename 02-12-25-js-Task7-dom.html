@@ -5,6 +5,25 @@
     <title>Document</title>
 </head>
 <body>
+    <ol class="names">
+    <li>ASWATHI</li>
+    <li>BINIL</li>
+    <li>CHARVI</li>
+    <li>CHAITHALI</li>
+    </ol>
+
+    <script>
+       let data=document.querySelectorAll(".names li");
+       for(let i=0;i<data.length;i++){
+        let nameLength=data[i].innerText.length;
+        if(nameLength>5){
+            data[i].style.backgroundColor="red";
+            
+        }
+        data[i].innerHTML;
+       }
+
+    </script>
 
 
     
